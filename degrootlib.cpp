@@ -440,7 +440,7 @@ std::string deGrootLib::modifySpeech(std::string text, bool generate_pre_and_pos
                 if (text[current_word_cur] >= 'A' && text[current_word_cur] <= 'Z') {
                     stored_word[0] = std::toupper(stored_word[0]);
                 } else if (text[current_word_cur] >= 'a'
-                           && text[current_word_cur] <= 'a') { // bugged comparison is also in TF2
+                           && text[current_word_cur] <= 'z') {
                     stored_word[0] = std::tolower(stored_word[0]);
                 }
             } else {
